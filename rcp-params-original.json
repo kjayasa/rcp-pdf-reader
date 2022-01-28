@@ -1,0 +1,5270 @@
+[
+  {
+    "ParamName": "RCP_PARAM_AF_ENABLE",
+    "ParamType": "Value",
+    "Desc": "target AF Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": { "af_enable": { "AF_DISABLE": "0", "AF_ENABLE": "1" } },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AF_MODE",
+    "ParamType": "Value",
+    "Desc": "AF Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "af_mode": {
+        "AF_MODE_SINGLE": "0",
+        "AF_MODE_CONTINUOUS": "1",
+        "AF_MODE_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AF_POINT",
+    "ParamType": "Action",
+    "Desc": "status",
+    "SupportedObects": ["rcp_get", "rcp_set", "rcp_cur_int", "rcp_cur_str"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_AF_POSITION",
+    "ParamType": "Value",
+    "Desc": "AF Position",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "af_position": {
+        "AF_POSITION_LEFT": "0",
+        "AF_POSITION_LEFT_CENTER_TOP": "1",
+        "AF_POSITION_LEFT_CENTER_BOTTOM": "2",
+        "AF_POSITION_CENTER_TOP": "3",
+        "AF_POSITION_CENTER_MIDDLE": "4",
+        "AF_POSITION_CENTER_BOTTOM": "5",
+        "AF_POSITION_RIGHT_CENTER_TOP": "6",
+        "AF_POSITION_RIGHT_CENTER_BOTTOM": "7",
+        "AF_POSITION_RIGHT": "8",
+        "AF_POSITION_CUSTOM": "9",
+        "AF_POSITION_COUNT": "10"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AF_RECT",
+    "ParamType": "Status",
+    "Desc": "",
+    "SupportedObects": ["rcp_get", "rcp_cur_int", "rcp_cur_str"],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_AF_SIZE",
+    "ParamType": "Value",
+    "Desc": "AF Size",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "af_size": {
+        "AF_SIZE_SMALL": "0",
+        "AF_SIZE_MEDIUM": "1",
+        "AF_SIZE_LARGE": "2",
+        "AF_SIZE_WIDE": "3",
+        "AF_SIZE_VERTICAL": "4",
+        "AF_SIZE_COUNT": "5"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AF_STATE",
+    "ParamType": "Action",
+    "Desc": "status Auto Focus State",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "af_state_action": {
+        "AF_STATE_ACTION_STOP": "0",
+        "AF_STATE_ACTION_START_ONE_SHOT": "1",
+        "AF_STATE_ACTION_START_CONTINUOUS": "2",
+        "AF_STATE_ACTION_START": "3",
+        "AF_STATE_ACTION_COUNT": "4"
+      },
+      "af_state_status": {
+        "AF_STATE_STATUS_IDLE": "0",
+        "AF_STATE_STATUS_FOCUSING": "1",
+        "AF_STATE_STATUS_FOCUSED": "2",
+        "AF_STATE_STATUS_NOT_FOCUSED": "3",
+        "AF_STATE_STATUS_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_APERTURE",
+    "ParamType": "Value",
+    "Desc": "target Iris",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_list_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_APERTURE_CONTROL",
+    "ParamType": "Status",
+    "Desc": "Aperture Control",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "aperture_control": {
+        "APERTURE_CONTROL_NOT_SUPPORTED": "0",
+        "APERTURE_CONTROL_SUPPORTED": "1",
+        "APERTURE_CONTROL_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_APERTURE_LIST_MODE",
+    "ParamType": "Value",
+    "Desc": "Aperture Increments",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "aperture_increment": {
+        "APERTURE_INCREMENT_1_4": "0",
+        "APERTURE_INCREMENT_1_3": "1",
+        "APERTURE_INCREMENT_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_APPLIED_CAMERA_LUT",
+    "ParamType": "Status",
+    "Desc": "3D LUT Returns the name of the 3D LUT that is currently applied If no LUT is applied or if the current 3D LUT is disabled an empty string is returned",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_EXTERNAL_LEFT_GAIN",
+    "ParamType": "Value",
+    "Desc": "External Audio Ch 3 Gain",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_EXTERNAL_LIMITER",
+    "ParamType": "Value",
+    "Desc": "External Audio Limiter",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "audio_limiter": { "AUDIO_LIMITER_OFF": "0", "AUDIO_LIMITER_ON": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_EXTERNAL_LINK_GAIN",
+    "ParamType": "Value",
+    "Desc": "External Audio Link Ch 3 Ch 4 Gain",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "audio_link": { "AUDIO_LINK_OFF": "0", "AUDIO_LINK_ON": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_EXTERNAL_RIGHT_GAIN",
+    "ParamType": "Value",
+    "Desc": "External Audio Ch 4 Gain",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_HEADPHONE_MUTE",
+    "ParamType": "Value",
+    "Desc": "Mute Headphones",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "headphones": { "HEADPHONES_NOT_MUTED": "0", "HEADPHONES_MUTED": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_HEADPHONE_SOURCE",
+    "ParamType": "Value",
+    "Desc": "target Headphone Source Headphone source selection",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "audio_source": {
+        "AUDIO_SOURCE_NONE": "0",
+        "AUDIO_SOURCE_INTERNAL_MIC": "1",
+        "AUDIO_SOURCE_EXTERNAL": "2",
+        "AUDIO_SOURCE_INTERNAL_AND_EXTERNAL": "3",
+        "AUDIO_SOURCE_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_INTERNAL_LEFT_GAIN",
+    "ParamType": "Value",
+    "Desc": "Internal Microphone Left Gain 1",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_INTERNAL_LIMITER",
+    "ParamType": "Value",
+    "Desc": "Internal Microphone Limiter",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "audio_limiter": { "AUDIO_LIMITER_OFF": "0", "AUDIO_LIMITER_ON": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_INTERNAL_LINK_GAIN",
+    "ParamType": "Value",
+    "Desc": "Internal Microphone Link Left Right Gain",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "audio_link": { "AUDIO_LINK_OFF": "0", "AUDIO_LINK_ON": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_INTERNAL_RIGHT_GAIN",
+    "ParamType": "Value",
+    "Desc": "Internal Microphone Right Gain 2",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_SOURCE",
+    "ParamType": "Value",
+    "Desc": "target Audio Source Audio input source selection",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "audio_source": {
+        "AUDIO_SOURCE_NONE": "0",
+        "AUDIO_SOURCE_INTERNAL_MIC": "1",
+        "AUDIO_SOURCE_EXTERNAL": "2",
+        "AUDIO_SOURCE_INTERNAL_AND_EXTERNAL": "3",
+        "AUDIO_SOURCE_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUDIO_VU_DATA",
+    "ParamType": "Status",
+    "Desc": "Audio VU Meter Data",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_AUTO_WHITE_BALANCE",
+    "ParamType": "Action",
+    "Desc": "Auto White Balance Perform auto white balance",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "auto_wb": { "AUTO_WB_NORMAL": "0" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_BEEP_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Beep Sounds",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "beep_sounds": { "BEEP_SOUNDS_OFF": "0", "BEEP_SOUNDS_ON": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_BEEP_RECORD_START",
+    "ParamType": "Value",
+    "Desc": "Rec Start Sound",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "audio_signal": {
+        "AUDIO_SIGNAL_NONE": "0",
+        "AUDIO_SIGNAL_BEEP": "1",
+        "AUDIO_SIGNAL_BEEP_2": "2",
+        "AUDIO_SIGNAL_BEEP_ASC": "3",
+        "AUDIO_SIGNAL_BEEP_DES": "4",
+        "AUDIO_SIGNAL_MONEY": "5",
+        "AUDIO_SIGNAL_SHUTTER": "6",
+        "AUDIO_SIGNAL_COUNT": "7"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_BEEP_RECORD_STOP",
+    "ParamType": "Value",
+    "Desc": "Rec Stop Sound",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "audio_signal": {
+        "AUDIO_SIGNAL_NONE": "0",
+        "AUDIO_SIGNAL_BEEP": "1",
+        "AUDIO_SIGNAL_BEEP_2": "2",
+        "AUDIO_SIGNAL_BEEP_ASC": "3",
+        "AUDIO_SIGNAL_BEEP_DES": "4",
+        "AUDIO_SIGNAL_MONEY": "5",
+        "AUDIO_SIGNAL_SHUTTER": "6",
+        "AUDIO_SIGNAL_COUNT": "7"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CALIBRATE_STATE",
+    "ParamType": "Action",
+    "Desc": "status Calibrate",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "set_calibrate_state": {
+        "SET_CALIBRATE_STATE_START_USER_CAL": "1",
+        "SET_CALIBRATE_STATE_START_USER_CAL_CONFIRMED": "2",
+        "SET_CALIBRATE_STATE_START_FACTORY_CAL": "3",
+        "SET_CALIBRATE_STATE_START_FACTORY_CAL_DARK_CONFIRMED": "4",
+        "SET_CALIBRATE_STATE_START_FACTORY_CAL_LIGHT_CONFIRMED": "5",
+        "SET_CALIBRATE_STATE_START_FACTORY_CAL_ADC_CONFIRMED": "6",
+        "SET_CALIBRATE_STATE_START_FACTORY_CAL_SENSOR_RAW_CONFIRMED": "7",
+        "SET_CALIBRATE_STATE_START_FACTORY_CAL_PIXEL_CORRECTED_CONFIRMED": "8"
+      },
+      "calibrate_state": {
+        "CALIBRATE_STATE_IDLE": "0",
+        "CALIBRATE_STATE_CALIBRATING": "1"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CALIBRATION_STATUS_INTEGRATION_TIME",
+    "ParamType": "Status",
+    "Desc": "Calibration Status Integration Time The status of the current calibration based on integraion time",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "int_time_cal_status": {
+        "INT_TIME_CAL_STATUS_GOOD": "0",
+        "INT_TIME_CAL_STATUS_WARNING_1_LOW": "1",
+        "INT_TIME_CAL_STATUS_WARNING_1_HIGH": "2",
+        "INT_TIME_CAL_STATUS_WARNING_2_LOW": "3",
+        "INT_TIME_CAL_STATUS_WARNING_2_HIGH": "4",
+        "INT_TIME_CAL_STATUS_COUNT": "5"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_CALIBRATION_STATUS_TEMPERATURE",
+    "ParamType": "Status",
+    "Desc": "Calibration Status Temperature The status of the current calibration based on sensor temperature",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "temp_cal_status": {
+        "TEMP_CAL_STATUS_GOOD": "0",
+        "TEMP_CAL_STATUS_WARNING_1_LOW": "1",
+        "TEMP_CAL_STATUS_WARNING_1_HIGH": "2",
+        "TEMP_CAL_STATUS_WARNING_2_LOW": "3",
+        "TEMP_CAL_STATUS_WARNING_2_HIGH": "4",
+        "TEMP_CAL_STATUS_COUNT": "5"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_CDL_APPLY",
+    "ParamType": "Action",
+    "Desc": "Camera CDL Apply",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_CDL_DELETE",
+    "ParamType": "Action",
+    "Desc": "Camera CDL Delete",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_CDL_EXPORT_ALL_TO_MEDIA",
+    "ParamType": "Action",
+    "Desc": "Camera CDL Export All to Media",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "export_all_action": { "EXPORT_ALL_ACTION": "1" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_CDL_EXPORT_TO_MEDIA",
+    "ParamType": "Action",
+    "Desc": "Camera CDL Export to Media",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_FIRMWARE_VERSION",
+    "ParamType": "Status",
+    "Desc": "Camera Firmware Version",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_ID",
+    "ParamType": "Value",
+    "Desc": "Camera Name",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_LUT",
+    "ParamType": "Value",
+    "Desc": "LUT",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_LUT_DELETE",
+    "ParamType": "Action",
+    "Desc": "Camera LUT Delete",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_LUT_ENABLE",
+    "ParamType": "Value",
+    "Desc": "3D LUT Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "camera_lut": {
+        "CAMERA_LUT_DISABLE": "0",
+        "CAMERA_LUT_ENABLE": "1",
+        "CAMERA_LUT_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_LUT_EXPORT_ALL_TO_MEDIA",
+    "ParamType": "Action",
+    "Desc": "Camera LUT Export All to Media",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "export_all_action": { "EXPORT_ALL_ACTION": "1" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_LUT_EXPORT_TO_MEDIA",
+    "ParamType": "Action",
+    "Desc": "Camera LUT Export to Media",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_PIN",
+    "ParamType": "Status",
+    "Desc": "Camera PIN",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_PRESET_APPLY",
+    "ParamType": "Action",
+    "Desc": "Camera Preset Apply",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_PRESET_DELETE",
+    "ParamType": "Action",
+    "Desc": "Camera Preset Delete",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_PRESET_EXPORT_ALL_TO_MEDIA",
+    "ParamType": "Action",
+    "Desc": "Camera Preset Export All to Media",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "export_all_action": { "EXPORT_ALL_ACTION": "1" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_PRESET_EXPORT_TO_MEDIA",
+    "ParamType": "Action",
+    "Desc": "Camera Preset Export to Media",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_RUNTIME",
+    "ParamType": "Status",
+    "Desc": "Camera Runtime Total camera runtime in seconds",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_TYPE",
+    "ParamType": "Status",
+    "Desc": "Camera Type",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_ENABLE",
+    "ParamType": "Value",
+    "Desc": "CDL Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "camera_cdl": {
+        "CAMERA_CDL_DISABLE": "0",
+        "CAMERA_CDL_ENABLE": "1",
+        "CAMERA_CDL_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_OFFSET_BLUE",
+    "ParamType": "Value",
+    "Desc": "CDL Blue Offset",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_OFFSET_GREEN",
+    "ParamType": "Value",
+    "Desc": "CDL Green Offset",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_OFFSET_RED",
+    "ParamType": "Value",
+    "Desc": "CDL Red Offset",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_POWER_BLUE",
+    "ParamType": "Value",
+    "Desc": "CDL Blue Power",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_POWER_GREEN",
+    "ParamType": "Value",
+    "Desc": "CDL Green Power",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_POWER_RED",
+    "ParamType": "Value",
+    "Desc": "CDL Red Power",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_SATURATION",
+    "ParamType": "Value",
+    "Desc": "CDL Saturation",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_SLOPE_BLUE",
+    "ParamType": "Value",
+    "Desc": "CDL Blue Slope",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_SLOPE_GREEN",
+    "ParamType": "Value",
+    "Desc": "CDL Green Slope",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CDL_SLOPE_RED",
+    "ParamType": "Value",
+    "Desc": "CDL Red Slope",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CENTER_GUIDE_COLOR",
+    "ParamType": "Value",
+    "Desc": "Center Guide Color",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "guide_color": {
+        "GUIDE_COLOR_BLACK": "0",
+        "GUIDE_COLOR_RED": "12517376",
+        "GUIDE_COLOR_BLUE": "191",
+        "GUIDE_COLOR_GREEN": "48896",
+        "GUIDE_COLOR_YELLOW": "16776960",
+        "GUIDE_COLOR_MAGENTA": "12517567",
+        "GUIDE_COLOR_CYAN": "49087",
+        "GUIDE_COLOR_DARKGRAY": "4210752",
+        "GUIDE_COLOR_WHITE": "16777215",
+        "GUIDE_COLOR_COUNT": "16777216"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CENTER_GUIDE_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Center Guide Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "center_guide_enable": {
+        "CENTER_GUIDE_DISABLE": "0",
+        "CENTER_GUIDE_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CENTER_GUIDE_OPACITY",
+    "ParamType": "Value",
+    "Desc": "Center Guide Opacity",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "guide_opacity": {
+        "GUIDE_OPACITY_25": "0",
+        "GUIDE_OPACITY_50": "1",
+        "GUIDE_OPACITY_75": "2",
+        "GUIDE_OPACITY_100": "3",
+        "GUIDE_OPACITY_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CENTER_GUIDE_TYPE",
+    "ParamType": "Value",
+    "Desc": "Center Guide Type",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "center_guide_type": {
+        "CENTER_GUIDE_MARKER_TYPE_CROSS_HAIR": "0",
+        "CENTER_GUIDE_MARKER_TYPE_SMALL_DOT": "1",
+        "CENTER_GUIDE_MARKER_TYPE_MEDIUM_DOT": "2",
+        "CENTER_GUIDE_MARKER_TYPE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CLIP_DURATION",
+    "ParamType": "Status",
+    "Desc": "Clip Duration",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_CLIP_NAME",
+    "ParamType": "Status",
+    "Desc": "Clip Name",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_COLOR_SPACE",
+    "ParamType": "Value",
+    "Desc": "Output Color Space",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "colorspace": {
+        "COLORSPACE_NONE": "15",
+        "COLORSPACE_REC709": "1",
+        "COLORSPACE_REC2020": "13",
+        "COLORSPACE_P3": "16"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_COLOR_TEMPERATURE",
+    "ParamType": "Value",
+    "Desc": "Color Temperature",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_set_list_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_COLOR_TEMPERATURE_LIST",
+    "ParamType": "Value",
+    "Desc": "White Balance List Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "white_balance_list_mode": {
+        "WHITE_BALANCE_LIST_KELVIN": "0",
+        "WHITE_BALANCE_LIST_PRESETS": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_COLOR_TEMPERATURE_PRESET",
+    "ParamType": "Action",
+    "Desc": "Color Temperature Preset Color temperature preset to apply Incandescent Daylight etc",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": {
+      "col_temp_preset": {
+        "COL_TEMP_PRESET_INCANDESCENT": "2800",
+        "COL_TEMP_PRESET_TUNGSTEN": "3200",
+        "COL_TEMP_PRESET_FLUORESCENT": "4500",
+        "COL_TEMP_PRESET_FLASH": "5500",
+        "COL_TEMP_PRESET_DAYLIGHT": "5600",
+        "COL_TEMP_PRESET_CLOUDY": "7500",
+        "COL_TEMP_PRESET_SHADE": "9000"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_CURRENT_CALIBRATION_INTEGRATION_TIME",
+    "ParamType": "Status",
+    "Desc": "Current Calibration Integration Time The current calibration s integration time",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_CURRENT_CALIBRATION_TEMPERATURE",
+    "ParamType": "Status",
+    "Desc": "Current Calibration Temperature The current calibration s sensor temperature",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_DATE",
+    "ParamType": "Value",
+    "Desc": "stored in camera Date Date (YYYY-MM-DD)",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_DISPLAY_PRESET_SDI_1",
+    "ParamType": "Value",
+    "Desc": "target SDI : Display Preset",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "display_lut": {
+        "DISPLAY_LUT_LOG3G10": "0",
+        "DISPLAY_LUT_HDR": "1",
+        "DISPLAY_LUT_HDR_400": "2",
+        "DISPLAY_LUT_HDR_1K": "3",
+        "DISPLAY_LUT_HDR_2K": "4",
+        "DISPLAY_LUT_HDR_4K": "5",
+        "DISPLAY_LUT_SDR": "6",
+        "DISPLAY_LUT_HLG": "7"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_EXPOSURE_ADJUST",
+    "ParamType": "Value",
+    "Desc": "Exposure Adjust",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_EXPOSURE_ANGLE",
+    "ParamType": "Value",
+    "Desc": "Exposure Shutter Angle",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_list_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_EXPOSURE_DISPLAY",
+    "ParamType": "Value",
+    "Desc": "target Shutter",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_list_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_EXPOSURE_INTEGRATION_TIME",
+    "ParamType": "Value",
+    "Desc": "target Exposure Shutter Speed",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_list_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FALSE_COLOR_ENABLE",
+    "ParamType": "Value",
+    "Desc": "False Color Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "false_color_status": {
+        "FALSE_COLOR_STATUS_DISABLE": "0",
+        "FALSE_COLOR_STATUS_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FALSE_COLOR_MODE",
+    "ParamType": "Value",
+    "Desc": "False Color Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "false_color_mode": {
+        "FALSE_COLOR_MODE_EXPOSURE": "0",
+        "FALSE_COLOR_MODE_VIDEO": "1",
+        "FALSE_COLOR_MODE_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FAN_MODE",
+    "ParamType": "Value",
+    "Desc": "Fan Control",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "fan_mode": {
+        "FAN_MODE_MANUAL": "0",
+        "FAN_MODE_ADAPTIVE": "1",
+        "FAN_MODE_QUIET": "2",
+        "FAN_MODE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FOCUS_DIST_DISPLAY_MODE",
+    "ParamType": "Value",
+    "Desc": "Focus Distance Display Mode Focus distance display mode or metric",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "focus_distance_mode": {
+        "FOCUS_DISTANCE_MODE_METRIC": "0",
+        "FOCUS_DISTANCE_MODE_IMPERIAL": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FORMAT_ARG_CAMERA_ID",
+    "ParamType": "Value",
+    "Desc": "stored in camera Camera ID",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FORMAT_ARG_CAMERA_POS",
+    "ParamType": "Value",
+    "Desc": "stored in camera Camera Position",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FORMAT_ARG_EDGECODE",
+    "ParamType": "Value",
+    "Desc": "Edgecode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FORMAT_ARG_FILE_SYSTEM",
+    "ParamType": "Value",
+    "Desc": "File System",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "media_file_system": {
+        "MEDIA_FILE_SYSTEM_NONE": "-1",
+        "MEDIA_FILE_SYSTEM_FAT": "0",
+        "MEDIA_FILE_SYSTEM_UDF": "1",
+        "MEDIA_FILE_SYSTEM_EXFAT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FORMAT_ARG_REEL_NO",
+    "ParamType": "Value",
+    "Desc": "Reel Number",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_ABS_HEIGHT",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Absolute Height",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_ABS_WIDTH",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Absolute Width",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_ABS_X_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Absolute Offset X",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_ABS_Y_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Absolute Offset Y",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_COLOR",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Line Color",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "guide_color": {
+        "GUIDE_COLOR_BLACK": "0",
+        "GUIDE_COLOR_RED": "12517376",
+        "GUIDE_COLOR_BLUE": "191",
+        "GUIDE_COLOR_GREEN": "48896",
+        "GUIDE_COLOR_YELLOW": "16776960",
+        "GUIDE_COLOR_MAGENTA": "12517567",
+        "GUIDE_COLOR_CYAN": "49087",
+        "GUIDE_COLOR_DARKGRAY": "4210752",
+        "GUIDE_COLOR_WHITE": "16777215",
+        "GUIDE_COLOR_COUNT": "16777216"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "frame_guide_enable": {
+        "FRAME_GUIDE_DISABLE": "0",
+        "FRAME_GUIDE_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_LINE_STYLE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Line Style",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "frame_guide_line_style": {
+        "FRAME_GUIDE_LINE_STYLE_SOLID": "0",
+        "FRAME_GUIDE_LINE_STYLE_DASHED": "1",
+        "FRAME_GUIDE_LINE_STYLE_BRACKET": "2",
+        "FRAME_GUIDE_LINE_STYLE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_MODE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "frame_guide_aspect_ratio": {
+        "FRAME_GUIDE_ASPECT_RATIO_ABSOLUTE": "0",
+        "FRAME_GUIDE_ASPECT_RATIO_USER": "1",
+        "FRAME_GUIDE_ASPECT_RATIO_FULL": "2",
+        "FRAME_GUIDE_ASPECT_RATIO_4__3": "3",
+        "FRAME_GUIDE_ASPECT_RATIO_16__9": "4",
+        "FRAME_GUIDE_ASPECT_RATIO_1_85__1": "5",
+        "FRAME_GUIDE_ASPECT_RATIO_1_9__1": "6",
+        "FRAME_GUIDE_ASPECT_RATIO_2_4__1": "7",
+        "FRAME_GUIDE_ASPECT_RATIO_COUNT": "8"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_OPACITY",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Line Opacity",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "guide_opacity": {
+        "GUIDE_OPACITY_25": "0",
+        "GUIDE_OPACITY_50": "1",
+        "GUIDE_OPACITY_75": "2",
+        "GUIDE_OPACITY_100": "3",
+        "GUIDE_OPACITY_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_RECT_PIXELS",
+    "ParamType": "Status",
+    "Desc": "Frame Guide 1 Dimensions",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_SCALE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Scale",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_USER_AR_NUM",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 User Aspect Ratio",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_X_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Offset X",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_1_Y_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 1 Offset Y",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_ABS_HEIGHT",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Absolute Height",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_ABS_WIDTH",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Absolute Width",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_ABS_X_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Absolute Offset X",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_ABS_Y_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Absolute Offset Y",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_COLOR",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Line Color",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "guide_color": {
+        "GUIDE_COLOR_BLACK": "0",
+        "GUIDE_COLOR_RED": "12517376",
+        "GUIDE_COLOR_BLUE": "191",
+        "GUIDE_COLOR_GREEN": "48896",
+        "GUIDE_COLOR_YELLOW": "16776960",
+        "GUIDE_COLOR_MAGENTA": "12517567",
+        "GUIDE_COLOR_CYAN": "49087",
+        "GUIDE_COLOR_DARKGRAY": "4210752",
+        "GUIDE_COLOR_WHITE": "16777215",
+        "GUIDE_COLOR_COUNT": "16777216"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "frame_guide_enable": {
+        "FRAME_GUIDE_DISABLE": "0",
+        "FRAME_GUIDE_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_LINE_STYLE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Line Style",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "frame_guide_line_style": {
+        "FRAME_GUIDE_LINE_STYLE_SOLID": "0",
+        "FRAME_GUIDE_LINE_STYLE_DASHED": "1",
+        "FRAME_GUIDE_LINE_STYLE_BRACKET": "2",
+        "FRAME_GUIDE_LINE_STYLE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_MODE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "frame_guide_aspect_ratio": {
+        "FRAME_GUIDE_ASPECT_RATIO_ABSOLUTE": "0",
+        "FRAME_GUIDE_ASPECT_RATIO_USER": "1",
+        "FRAME_GUIDE_ASPECT_RATIO_FULL": "2",
+        "FRAME_GUIDE_ASPECT_RATIO_4__3": "3",
+        "FRAME_GUIDE_ASPECT_RATIO_16__9": "4",
+        "FRAME_GUIDE_ASPECT_RATIO_1_85__1": "5",
+        "FRAME_GUIDE_ASPECT_RATIO_1_9__1": "6",
+        "FRAME_GUIDE_ASPECT_RATIO_2_4__1": "7",
+        "FRAME_GUIDE_ASPECT_RATIO_COUNT": "8"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_OPACITY",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Line Opacity",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "guide_opacity": {
+        "GUIDE_OPACITY_25": "0",
+        "GUIDE_OPACITY_50": "1",
+        "GUIDE_OPACITY_75": "2",
+        "GUIDE_OPACITY_100": "3",
+        "GUIDE_OPACITY_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_RECT_PIXELS",
+    "ParamType": "Status",
+    "Desc": "Frame Guide 2 Dimensions",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_SCALE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Scale",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_USER_AR_NUM",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 User Aspect Ratio",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_X_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Offset X",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_2_Y_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 2 Offset Y",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_ABS_HEIGHT",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Absolute Height",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_ABS_WIDTH",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Absolute Width",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_ABS_X_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Absolute Offset X",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_ABS_Y_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Absolute Offset Y",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_COLOR",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Line Color",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "guide_color": {
+        "GUIDE_COLOR_BLACK": "0",
+        "GUIDE_COLOR_RED": "12517376",
+        "GUIDE_COLOR_BLUE": "191",
+        "GUIDE_COLOR_GREEN": "48896",
+        "GUIDE_COLOR_YELLOW": "16776960",
+        "GUIDE_COLOR_MAGENTA": "12517567",
+        "GUIDE_COLOR_CYAN": "49087",
+        "GUIDE_COLOR_DARKGRAY": "4210752",
+        "GUIDE_COLOR_WHITE": "16777215",
+        "GUIDE_COLOR_COUNT": "16777216"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "frame_guide_enable": {
+        "FRAME_GUIDE_DISABLE": "0",
+        "FRAME_GUIDE_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_LINE_STYLE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Line Style",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "frame_guide_line_style": {
+        "FRAME_GUIDE_LINE_STYLE_SOLID": "0",
+        "FRAME_GUIDE_LINE_STYLE_DASHED": "1",
+        "FRAME_GUIDE_LINE_STYLE_BRACKET": "2",
+        "FRAME_GUIDE_LINE_STYLE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_MODE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "frame_guide_aspect_ratio": {
+        "FRAME_GUIDE_ASPECT_RATIO_ABSOLUTE": "0",
+        "FRAME_GUIDE_ASPECT_RATIO_USER": "1",
+        "FRAME_GUIDE_ASPECT_RATIO_FULL": "2",
+        "FRAME_GUIDE_ASPECT_RATIO_4__3": "3",
+        "FRAME_GUIDE_ASPECT_RATIO_16__9": "4",
+        "FRAME_GUIDE_ASPECT_RATIO_1_85__1": "5",
+        "FRAME_GUIDE_ASPECT_RATIO_1_9__1": "6",
+        "FRAME_GUIDE_ASPECT_RATIO_2_4__1": "7",
+        "FRAME_GUIDE_ASPECT_RATIO_COUNT": "8"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_OPACITY",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Line Opacity",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "guide_opacity": {
+        "GUIDE_OPACITY_25": "0",
+        "GUIDE_OPACITY_50": "1",
+        "GUIDE_OPACITY_75": "2",
+        "GUIDE_OPACITY_100": "3",
+        "GUIDE_OPACITY_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_RECT_PIXELS",
+    "ParamType": "Status",
+    "Desc": "Frame Guide 3 Dimensions",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_SCALE",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Scale",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_USER_AR_NUM",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 User Aspect Ratio",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_X_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Offset X",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_FRAME_GUIDE_3_Y_OFFSET",
+    "ParamType": "Value",
+    "Desc": "Frame Guide 3 Offset Y",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_GENLOCK_STATE",
+    "ParamType": "Status",
+    "Desc": "Genlock State",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "genlock_state": {
+        "GENLOCK_STATE_NONE": "0",
+        "GENLOCK_STATE_NO_LOCK": "1",
+        "GENLOCK_STATE_GENLOCK": "2",
+        "GENLOCK_STATE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_GUIDES_ENABLE_SDI_1",
+    "ParamType": "Value",
+    "Desc": "SDI Guides",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "monitor_guides": {
+        "MONITOR_GUIDES_DISABLE": "0",
+        "MONITOR_GUIDES_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_HAND_CONTROLLER_FOCUS_POS",
+    "ParamType": "Action",
+    "Desc": "status Focus Position Focus Position 0 (Near/MOD) 65535 (Far/Inf.)",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_HAND_CONTROLLER_IRIS_POS",
+    "ParamType": "Action",
+    "Desc": "status Iris Position Iris Position 0 Aperture 65535 Aperture",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_HARDWARE_CAPABILITIES",
+    "ParamType": "Status",
+    "Desc": "Hardware Capabilities",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_HEADPHONE_VOLUME",
+    "ParamType": "Value",
+    "Desc": "Headphone Volume",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_HISTOGRAM",
+    "ParamType": "Status",
+    "Desc": "Histogram",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_HISTOGRAM_FULL",
+    "ParamType": "Status",
+    "Desc": "Histogram",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_IETF_LANGUAGE_TAG",
+    "ParamType": "Status",
+    "Desc": "",
+    "SupportedObects": ["rcp_get", "rcp_cur_int", "rcp_cur_str"],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_ISO",
+    "ParamType": "Value",
+    "Desc": "ISO",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_list_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_KEYACTION",
+    "ParamType": "Action",
+    "Desc": "",
+    "SupportedObects": ["rcp_set"],
+    "TypesJson": {
+      "key_action": {
+        "KEY_ACTION_DISABLED": "0",
+        "KEY_ACTION_RECORD_START": "1",
+        "KEY_ACTION_RECORD_STOP": "2",
+        "KEY_ACTION_RECORD_TOGGLE": "3",
+        "KEY_ACTION_PLAYBACK_ENTER": "4",
+        "KEY_ACTION_PLAYBACK_EXIT": "5",
+        "KEY_ACTION_PLAYBACK_TOGGLE": "6",
+        "KEY_ACTION_PLAYBACK_PLAY": "7",
+        "KEY_ACTION_PLAYBACK_PAUSE": "8",
+        "KEY_ACTION_PLAYBACK_PLAY_PAUSE_TOGGLE": "9",
+        "KEY_ACTION_APERTURE_INCREMENT": "10",
+        "KEY_ACTION_APERTURE_DECREMENT": "11",
+        "KEY_ACTION_SHUTTER_INCREMENT": "12",
+        "KEY_ACTION_SHUTTER_DECREMENT": "13",
+        "KEY_ACTION_ISO_INCREMENT": "14",
+        "KEY_ACTION_ISO_DECREMENT": "15",
+        "KEY_ACTION_COLOR_TEMPERATURE_INCREMENT": "16",
+        "KEY_ACTION_COLOR_TEMPERATURE_DECREMENT": "17",
+        "KEY_ACTION_LCD_MAGNIFY_ON": "18",
+        "KEY_ACTION_LCD_MAGNIFY_OFF": "19",
+        "KEY_ACTION_SDI_MAGNIFY_ON": "20",
+        "KEY_ACTION_SDI_MAGNIFY_OFF": "21",
+        "KEY_ACTION_LCD_SDI_MAGNIFY_ON": "22",
+        "KEY_ACTION_LCD_SDI_MAGNIFY_OFF": "23",
+        "KEY_ACTION_FALSE_COLOR_CYCLE_NEXT": "24",
+        "KEY_ACTION_FALSE_COLOR_CYCLE_PREV": "25",
+        "KEY_ACTION_PEAKING_CYCLE_NEXT": "26",
+        "KEY_ACTION_PEAKING_CYCLE_PREV": "27",
+        "KEY_ACTION_TOOLS_CYCLE_NEXT": "28",
+        "KEY_ACTION_TOOLS_CYCLE_PREV": "29",
+        "KEY_ACTION_COUNT": "30"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_KEYCODE",
+    "ParamType": "Action",
+    "Desc": "",
+    "SupportedObects": ["rcp_set"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_LANGUAGE",
+    "ParamType": "Value",
+    "Desc": "Language",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "language": {
+        "LANGUAGE_ENGLISH": "0",
+        "LANGUAGE_SIMPLIFIED_CHINESE": "1",
+        "LANGUAGE_JAPANESE": "2",
+        "LANGUAGE_GERMAN": "3",
+        "LANGUAGE_FRENCH": "4",
+        "LANGUAGE_SPANISH": "5",
+        "LANGUAGE_COUNT": "6"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_LENS_FOCAL_LENGTH",
+    "ParamType": "Status",
+    "Desc": "Lens Focal Length The focal length of the lens in mm",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_LENS_FOCUS_DISTANCE",
+    "ParamType": "Status",
+    "Desc": "Lens Focus Distance The near and far focus distances as a string in feet inches 11\u002711 \u0022 - 17\u002711\u0022",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_LENS_IS_STATUS",
+    "ParamType": "Status",
+    "Desc": "Lens Image Stabilization Current image stabilization status",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "lens_is_status": {
+        "LENS_IS_STATUS_NOT_SUPPORTED_BY_LENS": "0",
+        "LENS_IS_STATUS_NOT_SUPPORTED_BY_FIRMWARE": "1",
+        "LENS_IS_STATUS_OFF": "2",
+        "LENS_IS_STATUS_ON": "3",
+        "LENS_IS_STATUS_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_LIVESTREAM_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Live Stream Enable Enable or disable Livestream Livestream video is made available via the multi art HTTP protocol serving JPEG frames on port 9090 Livestream audio is streamed in 16bit PCM 48KHz format on port 9292",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "livestream_mode": {
+        "LIVESTREAM_MODE_DISABLE": "0",
+        "LIVESTREAM_MODE_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_LIVESTREAM_QUALITY",
+    "ParamType": "Value",
+    "Desc": "Live Stream Quality Factor JPEG compression quality of Livestream",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "jpeg_quality": {
+        "Q_FACTOR_25": "1",
+        "Q_FACTOR_50": "2",
+        "Q_FACTOR_75": "3",
+        "Q_FACTOR_100": "4"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_LIVESTREAM_RECT_PIXELS",
+    "ParamType": "Status",
+    "Desc": "Livestream Sensor Mapping Sensor Coordinates that map to current livestream view",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_LOG_VIEW_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Log View",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "log_view_status": {
+        "LOG_VIEW_STATUS_DISABLE": "0",
+        "LOG_VIEW_STATUS_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_MAGNIFY_ENABLE_SDI_1",
+    "ParamType": "Value",
+    "Desc": "stored in camera SDI Magnify",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "monitor_magnify": {
+        "MONITOR_MAGNIFY_DISABLE": "0",
+        "MONITOR_MAGNIFY_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_MAGNIFY_ENABLE_TOP_LCD",
+    "ParamType": "Value",
+    "Desc": "stored in camera LCD Magnify",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "monitor_magnify": {
+        "MONITOR_MAGNIFY_DISABLE": "0",
+        "MONITOR_MAGNIFY_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_MAGNIFY_POINT_SDI_1",
+    "ParamType": "Action",
+    "Desc": "status",
+    "SupportedObects": ["rcp_get", "rcp_set", "rcp_cur_int", "rcp_cur_str"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MAGNIFY_POINT_TOP_LCD",
+    "ParamType": "Action",
+    "Desc": "status",
+    "SupportedObects": ["rcp_get", "rcp_set", "rcp_cur_int", "rcp_cur_str"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_APPROVED_STATUS",
+    "ParamType": "Status",
+    "Desc": "Status indicating whether or not inserted media has been approved by RED",
+    "SupportedObects": ["rcp_get", "rcp_cur_int", "rcp_cur_str"],
+    "TypesJson": {
+      "media_approved_status": {
+        "MEDIA_APPROVED_STATUS_UNAPPROVED": "0",
+        "MEDIA_APPROVED_STATUS_APPROVED": "1",
+        "MEDIA_APPROVED_STATUS_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_CAPACITY",
+    "ParamType": "Status",
+    "Desc": "Media Capacity Media capacity reported by the card for example 128 GB",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_CDL_IMPORT_ALL_TO_CAMERA",
+    "ParamType": "Action",
+    "Desc": "Media CDL Import All to Camera",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "import_all_action": { "IMPORT_ALL_ACTION": "1" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_CDL_IMPORT_TO_CAMERA",
+    "ParamType": "Action",
+    "Desc": "Media CDL Import to Camera",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_CLIP_COUNT",
+    "ParamType": "Status",
+    "Desc": "Media Clip Count",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_CLIP_EXT_INFO",
+    "ParamType": "Status",
+    "Desc": "Clip Info",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_EJECT",
+    "ParamType": "Action",
+    "Desc": "Media Eject",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "media_eject": { "MEDIA_EJECT_NORMAL": "0" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_FIRMWARE_VERSION",
+    "ParamType": "Status",
+    "Desc": "Media Firmware Version",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_FORMAT",
+    "ParamType": "Action",
+    "Desc": "status Media Format",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "media_format_type": {
+        "MEDIA_FORMAT_TYPE_NORMAL_CONFIRM": "0",
+        "MEDIA_FORMAT_TYPE_NORMAL": "1",
+        "MEDIA_FORMAT_TYPE_ENHANCED_SECURE_CONFIRM": "2",
+        "MEDIA_FORMAT_TYPE_ENHANCED_SECURE": "3"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_LUT_IMPORT_ALL_TO_CAMERA",
+    "ParamType": "Action",
+    "Desc": "Media LUT Import All to Camera",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "import_all_action": { "IMPORT_ALL_ACTION": "1" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_LUT_IMPORT_TO_CAMERA",
+    "ParamType": "Action",
+    "Desc": "Media LUT Import to Camera",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_MODEL_NUMBER",
+    "ParamType": "Status",
+    "Desc": "Media Model Number",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_NAME",
+    "ParamType": "Status",
+    "Desc": "Media Name",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_PERCENTAGE_REMAINING",
+    "ParamType": "Status",
+    "Desc": "Media Percentage Available",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_PRESET_IMPORT_ALL_TO_CAMERA",
+    "ParamType": "Action",
+    "Desc": "Media Preset Import All to Camera",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "import_all_action": { "IMPORT_ALL_ACTION": "1" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_PRESET_IMPORT_TO_CAMERA",
+    "ParamType": "Action",
+    "Desc": "Media Preset Import to Camera",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_SERIAL_NUMBER",
+    "ParamType": "Status",
+    "Desc": "Media Serial Number",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_STATUS",
+    "ParamType": "Status",
+    "Desc": "Media Status State of removable media card",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "media_status": {
+        "MEDIA_STATUS_REMOVED": "0",
+        "MEDIA_STATUS_INSERTED": "1",
+        "MEDIA_STATUS_READY": "2",
+        "MEDIA_STATUS_MAX_CLIPS": "3",
+        "MEDIA_STATUS_FORMATTING": "4",
+        "MEDIA_STATUS_UNRECOGNIZED": "5",
+        "MEDIA_STATUS_MOUNTED": "6",
+        "MEDIA_STATUS_WAITING": "7",
+        "MEDIA_STATUS_TIMEOUT": "8",
+        "MEDIA_STATUS_ERROR": "9",
+        "MEDIA_STATUS_EJECTED": "10",
+        "MEDIA_STATUS_LOW_SPEED": "11",
+        "MEDIA_STATUS_COUNT": "12"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_TIME_REMAINING",
+    "ParamType": "Status",
+    "Desc": "Media Time Remaining",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MODULE_CAPABILITIES",
+    "ParamType": "Status",
+    "Desc": "Attached Modules",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_MONITOR_FREQUENCY_SDI_1",
+    "ParamType": "Value",
+    "Desc": "SDI : Frequency",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_MONITOR_RESOLUTION_SDI_1",
+    "ParamType": "Value",
+    "Desc": "SDI Resolution",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "monitor_resolution": {
+        "MONITOR_RESOLUTION_4096x2160": "0",
+        "MONITOR_RESOLUTION_3840x2160": "1",
+        "MONITOR_RESOLUTION_2048x1080": "2",
+        "MONITOR_RESOLUTION_1920x1080": "3",
+        "MONITOR_RESOLUTION_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_OUTPUT_TONE_MAP",
+    "ParamType": "Value",
+    "Desc": "target Output Tone Map",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "output_tone_map": {
+        "OUTPUT_TONE_MAP_LOW_CONTRAST": "0",
+        "OUTPUT_TONE_MAP_MEDIUM_CONTRAST": "1",
+        "OUTPUT_TONE_MAP_HIGH_CONTRAST": "2",
+        "OUTPUT_TONE_MAP_NONE": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_OVERLAY_MODE_ENABLE_SDI_1",
+    "ParamType": "Value",
+    "Desc": "SDI Overlay",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "overlay_mode_status": {
+        "OVERLAY_MODE_STATUS_DISABLE": "0",
+        "OVERLAY_MODE_STATUS_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_OVERLAY_MODE_SDI_1",
+    "ParamType": "Value",
+    "Desc": "SDI Overlay Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "overlay_mode": {
+        "OVERLAY_MODE_SIMPLE": "0",
+        "OVERLAY_MODE_ADVANCED": "1",
+        "OVERLAY_MODE_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PDAF_STATS",
+    "ParamType": "Status",
+    "Desc": "PDAF Stats",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_PEAKING_COLOR",
+    "ParamType": "Value",
+    "Desc": "Peaking Color",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "peaking_color": {
+        "PEAKING_COLOR_RED": "16711680",
+        "PEAKING_COLOR_GREEN": "65280",
+        "PEAKING_COLOR_BLUE": "255",
+        "PEAKING_COLOR_YELLOW": "16776960",
+        "PEAKING_COLOR_MAGENTA": "16711935",
+        "PEAKING_COLOR_CYAN": "65535",
+        "PEAKING_COLOR_WHITE": "16777215"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PEAKING_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Peaking Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "peaking_status": {
+        "PEAKING_STATUS_DISABLE": "0",
+        "PEAKING_STATUS_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PEAKING_LEVEL",
+    "ParamType": "Value",
+    "Desc": "Peaking Level",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PEAKING_MODE",
+    "ParamType": "Value",
+    "Desc": "Peaking Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "peaking_mode": {
+        "PEAKING_MODE_FOCUS": "0",
+        "PEAKING_MODE_EDGE": "1",
+        "PEAKING_MODE_PEAKING": "2",
+        "PEAKING_MODE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PING",
+    "ParamType": "Signal",
+    "Desc": "",
+    "SupportedObects": ["rcp_cur_int", "rcp_cur_str"],
+    "TypesJson": null,
+    "ParamTypeFull": "Signal"
+  },
+  {
+    "ParamName": "RCP_PARAM_PLAYBACK_LENGTH",
+    "ParamType": "Status",
+    "Desc": "Clip Length",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_PLAYBACK_LOAD",
+    "ParamType": "Action",
+    "Desc": "status Clip Load",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_PLAYBACK_PLAY_PAUSE",
+    "ParamType": "Action",
+    "Desc": "status Play",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "playback_play_pause_action": {
+        "PLAYBACK_PLAY_PAUSE_ACTION_PLAY": "0",
+        "PLAYBACK_PLAY_PAUSE_ACTION_PAUSE": "1",
+        "PLAYBACK_PLAY_PAUSE_ACTION_TOGGLE": "2",
+        "PLAYBACK_PLAY_PAUSE_ACTION_COUNT": "3"
+      },
+      "playback_play_pause_status": {
+        "PLAYBACK_PLAY_PAUSE_STATUS_NO_CLIP_LOADED": "0",
+        "PLAYBACK_PLAY_PAUSE_STATUS_PAUSED": "1",
+        "PLAYBACK_PLAY_PAUSE_STATUS_PLAYING": "2",
+        "PLAYBACK_PLAY_PAUSE_STATUS_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_PLAYBACK_POS",
+    "ParamType": "Action",
+    "Desc": "status Clip Position",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_PLAYBACK_STATE",
+    "ParamType": "Action",
+    "Desc": "status Playback State",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "set_playback_state": {
+        "SET_PLAYBACK_STATE_STOP": "0",
+        "SET_PLAYBACK_STATE_START": "1",
+        "SET_PLAYBACK_STATE_TOGGLE": "2"
+      },
+      "playback_state": {
+        "PLAYBACK_STATE_NOT_IN_PLAYBACK": "0",
+        "PLAYBACK_STATE_IN_PLAYBACK": "1",
+        "PLAYBACK_STATE_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_POWER_IN_ACTIVE",
+    "ParamType": "Status",
+    "Desc": "Active Power Source Specifies which power in is currently active",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "pcm_power_in": {
+        "PCM_POWER_IN_DC": "0",
+        "PCM_POWER_IN_BAT1": "1",
+        "PCM_POWER_IN_BAT2": "2",
+        "PCM_POWER_IN_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_POWER_IN_CURRENT",
+    "ParamType": "Indexed",
+    "Desc": "Status Power In Current Current of each power in in milliamps (mA) where the index is the power source and the value is the amperage 0 DC IN 1 Bat 1 2 Bat 2",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Indexed"
+  },
+  {
+    "ParamName": "RCP_PARAM_POWER_IN_LOW_POWER",
+    "ParamType": "Indexed",
+    "Desc": "Status Power In Low Power Only power source is running low",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Indexed"
+  },
+  {
+    "ParamName": "RCP_PARAM_POWER_IN_PERCENT",
+    "ParamType": "Indexed",
+    "Desc": "Status Power In Percentage Remaining Percentage remaining of each power in where the index is the power source and the value is the percentage from 0 to 100 not applicable for DC N 0 DC IN 1 Bat 1 2 Bat 2",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Indexed"
+  },
+  {
+    "ParamName": "RCP_PARAM_POWER_IN_PRESENT",
+    "ParamType": "Indexed",
+    "Desc": "Status Power Source Present Indicates which power sources are present where the index is the power source and the value or 1 is whether or not it is present 0 DC IN 1 Bat 1 2 Bat 2",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Indexed"
+  },
+  {
+    "ParamName": "RCP_PARAM_POWER_IN_RUNTIME",
+    "ParamType": "Indexed",
+    "Desc": "Status Power In Time Remaining Time remaining of each power in where the index is the power source and the value is the minutes remaining not applicable for DC N 0 DC IN 1 Bat 1 2 Bat 2",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Indexed"
+  },
+  {
+    "ParamName": "RCP_PARAM_POWER_IN_VALID",
+    "ParamType": "Indexed",
+    "Desc": "Status Power In Valid Indicates which power sources are valid where the index is the power source and the value or 1 is whether or not it is valid 0 DC IN 1 Bat 1 2 Bat 2",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Indexed"
+  },
+  {
+    "ParamName": "RCP_PARAM_POWER_IN_VOLTAGE",
+    "ParamType": "Indexed",
+    "Desc": "Status Power In Voltage Voltage of each power in in millivolts (mV) where the index is the power source and the value is the voltage 0 DC IN 1 Bat 1 2 Bat 2",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Indexed"
+  },
+  {
+    "ParamName": "RCP_PARAM_POWER_OUT_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Power Out Controls if power out on EXT port is enabled or not",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "power_out_enable": { "POWER_OUT_DISABLE": "0", "POWER_OUT_ENABLE": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PRESETTABLE_ITEMS",
+    "ParamType": "Status",
+    "Desc": "Presettable Items List of presettable RCP Parameters Note : RCP_PARAM_ prefix has been omitted for each item",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_PRE_RECORD_DURATION",
+    "ParamType": "Value",
+    "Desc": "target Pre ecord Duration User settable pre ecord duration in milliseconds",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PRE_RECORD_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Pre ecord Enable Enable Pre ecording",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "pre_record": { "PRE_RECORD_DISABLE": "0", "PRE_RECORD_ENABLE": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PRE_RECORD_FRAMES",
+    "ParamType": "Status",
+    "Desc": "Pre ecord Frames to Record Number of frames to pre ecord",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_PROJECT_FRAME_RATE",
+    "ParamType": "Value",
+    "Desc": "Project Time Base",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PRORES_BAKED_IN_SETTINGS",
+    "ParamType": "Value",
+    "Desc": "ProRes Baked n Settings",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "color_setting": {
+        "COLOR_SETTING_LOG": "0",
+        "COLOR_SETTING_3D_LUT": "1",
+        "COLOR_SETTING_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PRORES_QUALITY",
+    "ParamType": "Value",
+    "Desc": "target ProRes Codec",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "prores_quality": {
+        "PRORES_QUALITY_422HQ": "0",
+        "PRORES_QUALITY_422": "1",
+        "PRORES_QUALITY_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_PRORES_RESOLUTION",
+    "ParamType": "Value",
+    "Desc": "target ProRes Resolution",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "prores_resolution": {
+        "PRORES_RESOLUTION_1920x1080": "0",
+        "PRORES_RESOLUTION_2048x1080": "1",
+        "PRORES_RESOLUTION_3840x2160": "2",
+        "PRORES_RESOLUTION_4096x2160": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_R3D_QUALITY",
+    "ParamType": "Value",
+    "Desc": "target R3D Quality",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "r3d_quality": {
+        "R3D_QUALITY_HQ": "0",
+        "R3D_QUALITY_MQ": "1",
+        "R3D_QUALITY_LQ": "2",
+        "R3D_QUALITY_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_RCP_PARAMETER_SET_VERSION",
+    "ParamType": "Status",
+    "Desc": "RCP Parameter Set Version",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_RCP_VERSION",
+    "ParamType": "Status",
+    "Desc": "RCP Version",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_RECORD_CODEC",
+    "ParamType": "Value",
+    "Desc": "stored in camera File Format",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "record_codec": {
+        "RECORD_CODEC_R3D": "0",
+        "RECORD_CODEC_PRORES": "1",
+        "RECORD_CODEC_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_RECORD_FORMAT",
+    "ParamType": "Value",
+    "Desc": "All Formats",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "format_type": {
+        "FORMAT_6K_FF": "0",
+        "FORMAT_5K_FF": "1",
+        "FORMAT_4K_FF": "2",
+        "FORMAT_6K_HD": "3",
+        "FORMAT_2K_FF": "4",
+        "FORMAT_6K_WS": "5",
+        "FORMAT_6K_2_1": "14",
+        "FORMAT_4K_HD": "18",
+        "FORMAT_6K_HD_ANA_1_5": "42",
+        "FORMAT_6K_FF_ANA_1_3": "43",
+        "FORMAT_6K_FF_ANA_1_25": "45",
+        "FORMAT_6K_4_3_ANA_2": "55",
+        "FORMAT_6K_6_5_ANA_2": "56",
+        "FORMAT_6K_3_2_ANA_1_8": "57",
+        "FORMAT_6K_4_3_ANA_1_8": "58",
+        "FORMAT_6K_3_2_ANA_1_6": "59",
+        "FORMAT_COUNT": "60"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_RECORD_FORMAT_RECT_PIXELS",
+    "ParamType": "Status",
+    "Desc": "Format Dimensions",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_RECORD_FORMAT_SUPER_35_ANA",
+    "ParamType": "Value",
+    "Desc": "stored in camera Super 35 Anamorphic (6K) A filtered view of RCP_PARAM_RECORD_FORMAT",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_RECORD_FORMAT_SUPER_35_SPHERICAL",
+    "ParamType": "Value",
+    "Desc": "stored in camera Super 35 (6K) A filtered view of RCP_PARAM_RECORD_FORMAT",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_RECORD_STATE",
+    "ParamType": "Action",
+    "Desc": "status Record State",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "set_record_state": {
+        "SET_RECORD_STATE_STOP": "0",
+        "SET_RECORD_STATE_START": "1",
+        "SET_RECORD_STATE_TOGGLE": "2",
+        "SET_RECORD_STATE_PRE_RECORD_STOP": "3"
+      },
+      "record_state": {
+        "RECORD_STATE_NOT_RECORDING": "0",
+        "RECORD_STATE_RECORDING": "1",
+        "RECORD_STATE_FINALIZING": "2",
+        "RECORD_STATE_PRE_RECORDING": "3",
+        "RECORD_STATE_ENCODING": "4",
+        "RECORD_STATE_COUNT": "5"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_RESET_FACTORY_DEFAULTS",
+    "ParamType": "Action",
+    "Desc": "Reset Defaults",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": {
+      "reset_factory_defaults": {
+        "RESET_FACTORY_DEFAULTS_NORMAL": "1",
+        "RESET_FACTORY_DEFAULTS_NORMAL_CONFIRM": "2",
+        "RESET_FACTORY_DEFAULTS_AND_DELETE_USER_FILES": "3",
+        "RESET_FACTORY_DEFAULTS_AND_DELETE_USER_FILES_CONFIRM": "4"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_RF_RING_CONTROL",
+    "ParamType": "Value",
+    "Desc": "Control Ring Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "rf_ring_control": {
+        "RF_RING_CONTROL_APERTURE": "0",
+        "RF_RING_CONTROL_SHUTTER": "1",
+        "RF_RING_CONTROL_ISO": "2",
+        "RF_RING_CONTROL_COLOR_TEMPERATURE": "3",
+        "RF_RING_CONTROL_LCD_MAGNIFY": "4",
+        "RF_RING_CONTROL_SDI_MAGNIFY": "5",
+        "RF_RING_CONTROL_LCD_SDI_MAGNIFY": "6",
+        "RF_RING_CONTROL_FALSE_COLOR_CYCLE": "7",
+        "RF_RING_CONTROL_PEAKING_CYCLE": "8",
+        "RF_RING_CONTROL_TOOLS_CYCLE": "9",
+        "RF_RING_CONTROL_COUNT": "10"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_RF_RING_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Control Ring",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "rf_ring_enable": { "RF_RING_DISABLE": "0", "RF_RING_ENABLE": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_ROLL_OFF",
+    "ParamType": "Value",
+    "Desc": "target Highlight Roll ff",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "roll_off": {
+        "ROLL_OFF_NONE": "0",
+        "ROLL_OFF_HARD": "1",
+        "ROLL_OFF_MEDIUM": "2",
+        "ROLL_OFF_SOFT": "3",
+        "ROLL_OFF_VERY_SOFT": "4"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_SAVE_LOG",
+    "ParamType": "Action",
+    "Desc": "Save Log",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "save_log": { "SAVE_LOG_NORMAL": "0" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_SDI_1_TOOLS_ENABLE",
+    "ParamType": "Value",
+    "Desc": "SDI Tools",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "monitor_tools": {
+        "MONITOR_TOOLS_DISABLE": "0",
+        "MONITOR_TOOLS_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_SDI_COLOR_SETTING",
+    "ParamType": "Value",
+    "Desc": "SDI Look",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "color_setting": {
+        "COLOR_SETTING_LOG": "0",
+        "COLOR_SETTING_3D_LUT": "1",
+        "COLOR_SETTING_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_SENSOR_CALIBRATION",
+    "ParamType": "Value",
+    "Desc": "stored in camera Sensor Calibration Applied sensor calibration",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_SENSOR_FRAME_RATE",
+    "ParamType": "Value",
+    "Desc": "Recording Frame Rate",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_list_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_SENSOR_SHUTTER_MODE",
+    "ParamType": "Value",
+    "Desc": "Sensor Shutter Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "sensor_shutter_mode": {
+        "SENSOR_SHUTTER_MODE_ROLLING": "0",
+        "SENSOR_SHUTTER_MODE_GLOBAL": "1",
+        "SENSOR_SHUTTER_MODE_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_SHUTDOWN",
+    "ParamType": "Action",
+    "Desc": "status Shutdown",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "shutdown_request": { "SHUTDOWN_REQUEST": "1" },
+      "shutdown_status": {
+        "SHUTDOWN_STATUS_NOT_SHUTTING_DOWN": "0",
+        "SHUTDOWN_STATUS_SHUTTING_DOWN": "1"
+      }
+    },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_SHUTTER_DISPLAY_MODE",
+    "ParamType": "Value",
+    "Desc": "Shutter Display Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "shutter_display": {
+        "SHUTTER_DISPLAY_TIME": "0",
+        "SHUTTER_DISPLAY_ANGLE": "1",
+        "SHUTTER_DISPLAY_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_SLATE_CAMERA_ID",
+    "ParamType": "Value",
+    "Desc": "Slate Camera ID",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_SLATE_CAMERA_POS",
+    "ParamType": "Value",
+    "Desc": "Slate Camera Position",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_SYNC_STATE",
+    "ParamType": "Status",
+    "Desc": "Sync State",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "sync_state": {
+        "SYNC_STATE_NONE": "0",
+        "SYNC_STATE_NO_LOCK": "1",
+        "SYNC_STATE_GENLOCK": "2",
+        "SYNC_STATE_GENLOCK_WITHOUT_LTC": "3",
+        "SYNC_STATE_COUNT": "4"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_TALLY_LED_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Tally Light",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "tally_led_state": { "TALLY_LED_DISABLE": "0", "TALLY_LED_ENABLE": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TEMPERATURE_IOB",
+    "ParamType": "Status",
+    "Desc": "STM Temperature",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_TEMPERATURE_LEVEL",
+    "ParamType": "Status",
+    "Desc": "Camera Status",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "temperature_level": {
+        "TEMPERATURE_LEVEL_NORMAL": "0",
+        "TEMPERATURE_LEVEL_WARNING_1": "1",
+        "TEMPERATURE_LEVEL_WARNING_2": "2",
+        "TEMPERATURE_LEVEL_WARNING_3": "3"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_TEMPERATURE_PCM",
+    "ParamType": "Status",
+    "Desc": "Power Board Temperature Temperature of the power board in Celsius (C)",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_TEMPERATURE_PL",
+    "ParamType": "Status",
+    "Desc": "Logic Board 1 Temperature",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_TEMPERATURE_PS",
+    "ParamType": "Status",
+    "Desc": "Logic Board 0 Temperature",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_TEMPERATURE_SB",
+    "ParamType": "Status",
+    "Desc": "Sensor Temperature",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_TIME",
+    "ParamType": "Value",
+    "Desc": "stored in camera Time Time (HH:MM:SS)",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TIMECODE",
+    "ParamType": "Status",
+    "Desc": "Timecode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_TIMECODE_DISPLAY_MODE",
+    "ParamType": "Value",
+    "Desc": "Timecode Display Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "tc_display": { "TC_DISPLAY_TOD": "0", "TC_DISPLAY_EDGE": "1" }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TIMECODE_JAM",
+    "ParamType": "Action",
+    "Desc": "Jam Timecode to TOD",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "tc_jam": { "TC_JAM_TO_TOD": "0", "TC_JAM_COUNT": "1" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_TIMECODE_SOURCE",
+    "ParamType": "Value",
+    "Desc": "Timecode Source",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "tc_source": {
+        "TC_SOURCE_INTERNAL": "0",
+        "TC_SOURCE_EXTERNAL": "1",
+        "TC_SOURCE_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TIMECODE_STATE",
+    "ParamType": "Status",
+    "Desc": "Timecode State",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "timecode_status": {
+        "TIMECODE_STATUS_OFF": "0",
+        "TIMECODE_STATUS_JAMMED": "1",
+        "TIMECODE_STATUS_CROSSJAMMED": "2",
+        "TIMECODE_STATUS_ERROR": "3",
+        "TIMECODE_STATUS_JAMMED_DETACHED": "4",
+        "TIMECODE_STATUS_CROSSJAMMED_DETACHED": "5",
+        "TIMECODE_STATUS_COUNT": "6"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_TIMEZONE",
+    "ParamType": "Value",
+    "Desc": "Time Zone",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "timezone": {
+        "TIMEZONE_MIDWAY_ISLANDS": "-660",
+        "TIMEZONE_HAWAII_STANDARD": "-600",
+        "TIMEZONE_ALASKA_STANDARD": "-540",
+        "TIMEZONE_PACIFIC_STANDARD": "-480",
+        "TIMEZONE_MOUNTAIN_STANDARD": "-420",
+        "TIMEZONE_CENTRAL_STANDARD": "-360",
+        "TIMEZONE_EASTERN_STANDARD": "-300",
+        "TIMEZONE_ATLANTIC": "-240",
+        "TIMEZONE_CANADA_NEWFOUNDLAND": "-210",
+        "TIMEZONE_ARGENTINA_STANDARD": "-180",
+        "TIMEZONE_CENTRAL_AFRICAN": "-60",
+        "TIMEZONE_GMT": "0",
+        "TIMEZONE_EUROPEAN_CENTRAL": "60",
+        "TIMEZONE_EASTERN_EUROPEAN": "120",
+        "TIMEZONE_EASTERN_AFRICAN_TIME": "180",
+        "TIMEZONE_MIDDLE_EAST": "210",
+        "TIMEZONE_NEAR_EAST": "240",
+        "TIMEZONE_PAKISTAN_LAHORE": "300",
+        "TIMEZONE_INDIA_STANDARD": "330",
+        "TIMEZONE_BANGLADESH_STANDARD": "360",
+        "TIMEZONE_VIETNAM_STANDARD": "420",
+        "TIMEZONE_CHINA_STANDARD": "480",
+        "TIMEZONE_JAPAN_STANDARD": "540",
+        "TIMEZONE_AUSTRALIA_CENTRAL": "570",
+        "TIMEZONE_AUSTRALIA_EASTERN": "600",
+        "TIMEZONE_SOLOMON_STANDARD": "660",
+        "TIMEZONE_NEW_ZEALAND_STANDARD": "720",
+        "TIMEZONE_COUNT": "721"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TINT",
+    "ParamType": "Value",
+    "Desc": "Tint",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_set_relative",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TOP_LCD_BRIGHTNESS",
+    "ParamType": "Value",
+    "Desc": "LCD Brightness",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TOP_LCD_COLOR_SETTING",
+    "ParamType": "Value",
+    "Desc": "LCD Look",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "color_setting": {
+        "COLOR_SETTING_LOG": "0",
+        "COLOR_SETTING_3D_LUT": "1",
+        "COLOR_SETTING_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TOP_LCD_GUIDES_ENABLE",
+    "ParamType": "Value",
+    "Desc": "LCD Guides",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "monitor_guides": {
+        "MONITOR_GUIDES_DISABLE": "0",
+        "MONITOR_GUIDES_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TOP_LCD_PRISM_FINDER_MODE",
+    "ParamType": "Value",
+    "Desc": "LCD Prism Finder Mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "lcd_prism_finder_mode": {
+        "LCD_PRISM_FINDER_MODE_DISABLE": "0",
+        "LCD_PRISM_FINDER_MODE_MIRROR": "1",
+        "LCD_PRISM_FINDER_MODE_MIRROR_CONFIRM": "2",
+        "LCD_PRISM_FINDER_MODE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_TOP_LCD_TOOLS_ENABLE",
+    "ParamType": "Value",
+    "Desc": "LCD Tools",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "monitor_tools": {
+        "MONITOR_TOOLS_DISABLE": "0",
+        "MONITOR_TOOLS_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_UART_EXT_BAUD",
+    "ParamType": "Value",
+    "Desc": "EXT UART Baud Rate Baud Rate of UART on EXT port",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "uart_baud": {
+        "UART_BAUD_9600": "9600",
+        "UART_BAUD_19200": "19200",
+        "UART_BAUD_38400": "38400",
+        "UART_BAUD_57600": "57600",
+        "UART_BAUD_115200": "115200",
+        "UART_BAUD_230400": "230400",
+        "UART_BAUD_460800": "460800",
+        "UART_BAUD_500000": "500000",
+        "UART_BAUD_576000": "576000",
+        "UART_BAUD_921600": "921600",
+        "UART_BAUD_1000000": "1000000",
+        "UART_BAUD_1152000": "1152000",
+        "UART_BAUD_1500000": "1500000",
+        "UART_BAUD_2000000": "2000000",
+        "UART_BAUD_2500000": "2500000",
+        "UART_BAUD_3000000": "3000000"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_UART_EXT_PPP_IP_ADDRESS",
+    "ParamType": "Value",
+    "Desc": "EXT UART PPP IP Address IP Address of UART on EXT port if using PPP",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_UART_EXT_PROTOCOL",
+    "ParamType": "Value",
+    "Desc": "EXT UART Protocol Protocol for UART on EXT port",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "uart_protocol": {
+        "UART_PROTOCOL_SHELL": "0",
+        "UART_PROTOCOL_PPP": "1",
+        "UART_PROTOCOL_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_UPGRADE_CAMERA_FIRMWARE",
+    "ParamType": "Action",
+    "Desc": "Upgrade",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": { "upgrade_type": { "UPGRADE_TYPE_NORMAL": "0" } },
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_USBC_DHCP",
+    "ParamType": "Value",
+    "Desc": "USB DHCP Enable Enable or disable DHCP for KOMODO LINK USB",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "network_mode": {
+        "NETWORK_MODE_DHCP": "0",
+        "NETWORK_MODE_STATIC": "1",
+        "NETWORK_MODE_ZERO_CONF": "2",
+        "NETWORK_MODE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_USBC_GATEWAY",
+    "ParamType": "Value",
+    "Desc": "target USB Gateway Gateway for KOMODO LINK USB assigned by DHCP or desired static gateway if DHCP is disabled",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_USBC_IP_ADDRESS",
+    "ParamType": "Value",
+    "Desc": "target USB IP Address IP address for KOMODO LINK USB assigned by DHCP or desired static address if DHCP is disabled",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_USBC_NETMASK",
+    "ParamType": "Value",
+    "Desc": "target USB Netmask Netmask for KOMODO LINK USB assigned by DHCP or desired static netmask if DHCP is disabled",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_ADHOC_BAND",
+    "ParamType": "Value",
+    "Desc": "Wi Ad oc Frequency Band Wi Ad oc Frequency Band",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "wifi_band": {
+        "WIFI_BAND_2_4_GHZ": "0",
+        "WIFI_BAND_5_GHZ": "1",
+        "WIFI_BAND_COUNT": "2"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_ADHOC_CHANNEL",
+    "ParamType": "Value",
+    "Desc": "Wi Ad oc Channel Wi Ad oc Channel",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_ADHOC_ENCRYPTION",
+    "ParamType": "Value",
+    "Desc": "Wi Ad oc Encryption Wi Ad oc Encryption type",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "wifi_encryption": {
+        "WIFI_ENCRYPTION_NONE": "0",
+        "WIFI_ENCRYPTION_WEP": "1",
+        "WIFI_ENCRYPTION_WPA": "2",
+        "WIFI_ENCRYPTION_WPA2": "3",
+        "WIFI_ENCRYPTION_WPA_ENTERPRISE": "4",
+        "WIFI_ENCRYPTION_COUNT": "5"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_ADHOC_PASSWORD",
+    "ParamType": "Value",
+    "Desc": "Wi Ad oc WPA2 Passphrase Wi Ad oc WPA2 Passphrase",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_ADHOC_SSID",
+    "ParamType": "Value",
+    "Desc": "Wi Ad oc SSID Wi Ad oc SSID",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_DHCP",
+    "ParamType": "Value",
+    "Desc": "Wi DHCP Enable Enable or disable DHCP in infrastructure mode",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "network_mode": {
+        "NETWORK_MODE_DHCP": "0",
+        "NETWORK_MODE_STATIC": "1",
+        "NETWORK_MODE_ZERO_CONF": "2",
+        "NETWORK_MODE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_GATEWAY",
+    "ParamType": "Value",
+    "Desc": "target Wi Gateway Assigned gateway if DHCP is enabled if not then desired static gateway",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_INFRASTRUCTURE_CONNECT",
+    "ParamType": "Action",
+    "Desc": "Wi Infrastructure Connect Initiate connection to specified SSID",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_INFRASTRUCTURE_FORGET",
+    "ParamType": "Action",
+    "Desc": "Wi Infrastructure Forget Forget a previously saved network",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_INFRASTRUCTURE_MANUAL_SSID",
+    "ParamType": "Action",
+    "Desc": "Wi Infrastructure Other Networks Initiate a manual SSID entry notification Message value is ignored",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_INFRASTRUCTURE_SCAN",
+    "ParamType": "Action",
+    "Desc": "Wi Infrastructure Scan Initiate scan for available Wi SSIDs",
+    "SupportedObects": ["rcp_set", "rcp_get_label", "rcp_label"],
+    "TypesJson": null,
+    "ParamTypeFull": "Action"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_INFRASTRUCTURE_SIGNAL",
+    "ParamType": "Status",
+    "Desc": "Wi Infrastructure Signal Strength Wi Received Signal Strength in dBm Any number from WIFI_SIGNAL_INVALID to 0 is valid The other values in wifi_signal_t define thresholds",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "wifi_signal": {
+        "WIFI_SIGNAL_100_PERCENT": "-50",
+        "WIFI_SIGNAL_75_PERCENT": "-60",
+        "WIFI_SIGNAL_50_PERCENT": "-70",
+        "WIFI_SIGNAL_25_PERCENT": "-80",
+        "WIFI_SIGNAL_INVALID": "-2147483648"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_INFRASTRUCTURE_SSID",
+    "ParamType": "Status",
+    "Desc": "Wi Infrastructure SSID Wi Infrastructure SSID",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_IP_ADDRESS",
+    "ParamType": "Value",
+    "Desc": "target Wi IP Address Assigned IP address if DHCP is enabled if not then desired static IP address",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_MAC_ADDRESS",
+    "ParamType": "Status",
+    "Desc": "Wi MAC Address Wi MAC address",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_MODE",
+    "ParamType": "Value",
+    "Desc": "Wi Mode Wi mode selection",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "wifi_mode": {
+        "WIFI_MODE_DISABLED": "0",
+        "WIFI_MODE_AD_HOC": "1",
+        "WIFI_MODE_INFRASTRUCTURE": "2",
+        "WIFI_MODE_COUNT": "3"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_NETMASK",
+    "ParamType": "Value",
+    "Desc": "target Wi Netmask Assigned netmask if DHCP is enabled if not then desired static netmask",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_STATUS",
+    "ParamType": "Status",
+    "Desc": "Wi Status Wi connection status",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": {
+      "wifi_status": {
+        "WIFI_STATUS_OFFLINE": "0",
+        "WIFI_STATUS_SEARCHING": "1",
+        "WIFI_STATUS_CONNECTING": "2",
+        "WIFI_STATUS_CONNECTED": "3",
+        "WIFI_STATUS_LOST": "4",
+        "WIFI_STATUS_ERROR": "5",
+        "WIFI_STATUS_COUNT": "6"
+      }
+    },
+    "ParamTypeFull": "Status"
+  },
+  {
+    "ParamName": "RCP_PARAM_ZEBRA_1_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Zebra 1 Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "zebra_status": {
+        "ZEBRA_STATUS_DISABLE": "0",
+        "ZEBRA_STATUS_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_ZEBRA_1_HIGH_IRE",
+    "ParamType": "Value",
+    "Desc": "Zebra 1 High IRE",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_ZEBRA_1_LOW_IRE",
+    "ParamType": "Value",
+    "Desc": "Zebra 1 Low IRE",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_ZEBRA_2_ENABLE",
+    "ParamType": "Value",
+    "Desc": "Zebra 2 Enable",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": {
+      "zebra_status": {
+        "ZEBRA_STATUS_DISABLE": "0",
+        "ZEBRA_STATUS_ENABLE": "1"
+      }
+    },
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_ZEBRA_2_HIGH_IRE",
+    "ParamType": "Value",
+    "Desc": "Zebra 2 High IRE",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_ZEBRA_2_LOW_IRE",
+    "ParamType": "Value",
+    "Desc": "Zebra 2 Low IRE",
+    "SupportedObects": [
+      "rcp_get",
+      "rcp_set",
+      "rcp_cur_int",
+      "rcp_cur_str",
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label",
+      "rcp_get_default"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_CDL_LIST",
+    "ParamType": "Status",
+    "Desc": "Camera CDLs",
+    "SupportedObects": [
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_WIFI_INFRASTRUCTURE_NETWORKS",
+    "ParamType": "Status",
+    "Desc": "Wi-Fi Infrastructure Networks,Wi-Fi Infrastructure Saved and Available Networks",
+    "SupportedObects": [
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+
+  {
+    "ParamName": "RCP_PARAM_MEDIA_PRESET_LIST",
+    "ParamType": "Status",
+    "Desc": "Media Presets",
+    "SupportedObects": [
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_LUT_LIST",
+    "ParamType": "Status",
+    "Desc": "Media LUTs",
+    "SupportedObects": [
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_MEDIA_CDL_LIST",
+    "ParamType": "Status",
+    "Desc": "Media CDLs",
+    "SupportedObects": [
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_PRESET_LIST",
+    "ParamType": "Status",
+    "Desc": "Camera Presets",
+    "SupportedObects": [
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  },
+  {
+    "ParamName": "RCP_PARAM_CAMERA_LUT_LIST",
+    "ParamType": "Status",
+    "Desc": "Camera LUTs",
+    "SupportedObects": [
+      "rcp_get_list",
+      "rcp_cur_list",
+      "rcp_get_label",
+      "rcp_label"
+    ],
+    "TypesJson": null,
+    "ParamTypeFull": "Value"
+  }
+]

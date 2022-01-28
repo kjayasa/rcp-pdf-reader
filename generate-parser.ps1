@@ -1,0 +1,1 @@
+java org.antlr.v4.Tool "./parser/RcpDoc.g4" -Dlanguage=CSharp  -o  "./parser"
